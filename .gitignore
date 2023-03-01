@@ -1,0 +1,5 @@
+.venv/
+.ipynb_checkpoints/
+node-regtest/.bitcoin/
+node-regtest/bin/
+utils/__pycache__/

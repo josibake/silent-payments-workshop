@@ -1,0 +1,3 @@
+$BITCOIN_BIN/bitcoin-qt -datadir=$BITCOIN_DATADIR \
+	-rpcport=$BITCOIN_RPCPORT \
+	-regtest "$@"
