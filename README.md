@@ -2,6 +2,8 @@
 
 This workshop is meant to introduce the silent payments scheme and prototype a light client using BIP 158 block filters.
 
+You can read the draft BIP (and leave comments/feedback!) here: https://hackmd.io/@silent-payments/SJN8ewJk3
+
 ## Setup
 
 You will need to compile `bitcoind` from the [Silent Payments DRAFT PR](https://github.com/bitcoin/bitcoin/pull/24897). Instructions for compiling Bitcoin from the source can be found [here](https://github.com/bitcoin/bitcoin/tree/master/doc#building).
