@@ -2,7 +2,7 @@
 
 This workshop is meant to introduce the silent payments scheme and prototype a light client using BIP 158 block filters.
 
-You can read the draft BIP (and leave comments/feedback!) here: https://hackmd.io/@silent-payments/SJN8ewJk3
+You can read the draft BIP (and leave comments/feedback!) here: https://github.com/josibake/bips/blob/silent-payments-bip-draft/bip-0000.mediawiki
 
 ## Setup
 
