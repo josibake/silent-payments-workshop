@@ -1,6 +1,7 @@
 .venv/
 .ipynb_checkpoints/
 utils/__pycache__/
+silent-payments-workshop-solutions.ipynb
 
 node-regtest/*
 !node-regtest/.bitcoin

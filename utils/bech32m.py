@@ -77,7 +77,9 @@ def bech32_decode(bech):
         return (None, None, None)
     bech = bech.lower()
     pos = bech.rfind('1')
-    if pos < 1 or pos + 7 > len(bech) or len(bech) > 90:
+
+    # remove the requirement that bech32m be less than 90 chars
+    if pos < 1 or pos + 7 > len(bech):
         return (None, None, None)
     if not all(x in CHARSET for x in bech[pos+1:]):
         return (None, None, None)
@@ -117,13 +119,9 @@ def decode(hrp, addr):
     if hrpgot != hrp:
         return (None, None)
     decoded = convertbits(data[1:], 5, 8, False)
-    if decoded is None or len(decoded) < 2 or len(decoded) > 40:
+    if decoded is None or len(decoded) < 2:
         return (None, None)
     if data[0] > 16:
-        return (None, None)
-    if data[0] == 0 and len(decoded) != 20 and len(decoded) != 32:
-        return (None, None)
-    if data[0] == 0 and spec != Encoding.BECH32 or data[0] != 0 and spec != Encoding.BECH32M:
         return (None, None)
     return (data[0], decoded)
 
